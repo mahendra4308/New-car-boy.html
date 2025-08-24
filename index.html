@@ -1,0 +1,132 @@
+<html>
+  <head>
+  <title>Cra Boy Game</title>
+  <style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .all{
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+  }
+  .a1{
+    height: 50%;
+    width: 80%;
+    background-color: coral;
+    margin-left: 10%;
+    margin-top: 10%;
+    display: inline-block;
+    border-radius: 15px 80px;
+    box-shadow: 8px 8px 15px black;
+  }
+  .c{
+    font-size: 30px;
+    color:#93f9d5;
+  margin-left: 5%;
+  margin-top: 10%;
+   display:inline-block; 
+   border-bottom:5px dotted red;
+  }
+  .p{
+    background-color: lightyellow;
+    color: red;
+    font-size: 40px;
+    padding: 20px;
+    margin-left: 20%;
+  margin-top: 15%;
+  display: inline-block;
+  border-radius: 15px 50px;
+  box-shadow: 1px 1px 15px yellow;
+  
+  }
+  .p:hover{
+    background-color: yellow;
+    color: blue;
+    transform: scale(1.02, 1.02);
+  }
+  h1{
+    display: inline-block;
+    font-size: 25px;
+    padding: 8px;
+    background-color: lightgray;
+    color: #c38edc;
+    border-radius: 10px;
+    border:3px solid green;
+  }
+  .cb{
+    font-size: 55px;
+    margin-left: 50px;
+    margin-top: 60px;
+    display: inline-block;
+    box-shadow: 1px 1px 10px #f9df9b;
+    border-radius: 15px;
+    padding: 5px;
+    border: 2px solid red;
+  }
+  #name{
+    margin-top: 0.7cm;
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 15px;
+    border-radius: 10px;
+    background-color: skyblue;
+    color: purple;
+  }
+  #name:hover{
+    background-color: #c3fbf9d4;
+    border: 3px solid red;
+  }
+  .play{
+    font-size: 25px;
+    margin-left: 15px; 
+    box-shadow: 1px 1px 15px red; 
+    border-radius: 5px;
+    padding: 5px;
+    
+  }
+  #button{
+    margin-left: 6cm;
+    margin-top: 1cm;
+  font-size: 35px;
+  background-color: yellow;
+  color: red;
+  padding: 8px;
+  border-radius: 10px;
+    
+  }
+  #button:hover{
+    background-color: #f7ffa0d4;
+    color: #0b19afd4;
+    border: 3px solid red;
+    transform: scale(1.1);
+    transition: 0.2s;
+    
+  }
+  </style>
+  </head>
+  <body>
+    
+    <div class="all">
+      <h1>Made By Mahendra Pratap</h1>
+      
+      <div class="input"><span class="play"><b>Player Name🧍😃:-</b> </span>
+      <input type="text" placeholder="Enter your Name" id="name"></input>
+      <button type="button" id="button" ><b>Done</b></button>
+      
+    </div>
+      <div class="a1"><span class="c"><b>Car  Boy Game</span><br>
+<span class="cb">🚘 V/S🧍</span>
+  <span class="p"><a href="cargame2.html" style="text-decoration:none;" onclick="naam()">Play Game</a></span>
+        </div>
+    </body>
+    <script>
+      function naam(){
+        var n1=document.getElementById("name").value;
+        localStorage.setItem("username", n1);
+        window.location.href="realCargame.html";
+      }
+      
+      </script>
+  </html>
